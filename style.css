@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 html{
@@ -13,7 +13,6 @@ html{
 body{
     background-color: #212529;
 }
-
 
 nav{
     display: flex;
@@ -67,24 +66,6 @@ article{
     text-shadow: 3px 4px 10px rgba(109, 103, 103, 0.568);
 }
 
-/*@keyframes float{
-
-    transform: translateY(0px);
-    animation: float 5s ease-in-out infinite;
-
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-30%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-}*/
-
 .p-helcome{
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -117,7 +98,6 @@ article{
     background-color: white;
     height: 400px;
     margin-top: 20rem;
-    margin-bottom: 11rem;
     padding: 80px 60px 0px 60px;
     box-sizing: border-box;
 }
@@ -128,6 +108,7 @@ article{
     font-size: 50px;
     margin-bottom: 2rem;
     text-shadow: 3px 4px 10px rgba(189, 181, 181, 0.568);
+    cursor: default;
 }
 
 .pagSobre p{
@@ -135,6 +116,7 @@ article{
     font-weight: 200;
     font-size: 24px;
     text-align:justify;
+    cursor: default;
 }
 
 .pagSobre label{
@@ -143,5 +125,187 @@ article{
     text-decoration: underline 3px rgb(172, 168, 168);
 }
 
+.image-sobre{
+    position: relative;
+}
+
+.image-sobre img{
+    position: absolute;
+    left: 60rem;
+    display: flex;
+    width: 265px;
+}
+
+#pag-serv{
+    background: linear-gradient(#212529, #100f16);
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.479);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: #212529;
+}
+
+.content{
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.content img{
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.card:hover{
+    border: 1px solid white;
+    transition: 0.1s;
+}
+
+#pag-serv .card .content h2{
+    margin-top: 8rem;
+    position: absolute;
+    top: -80%;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.02);
+    font-family: 'Poppins', sans-serif;
+    pointer-events: none;
+}
+
+#pag-serv .card .content h3{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.content p{
+    color: #BEBEBE;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.content img{
+    width: 200px;
+    z-index: 1;
+}
+
+#pag-skills{
+    background-color: #212529;
+    width: 100%;
+    height: 600px;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@keyframes float{
+transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/*.circle{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg #2462a0, #000);
+    clip-path: circle(40% at right 80%);
+    z-index: -1;
+}*/
+
+/*.grid-name h1{
+    text-align: center;
+    color: white;
+    font-family: 'Gruppo', cursive;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-top: 3rem;
+    text-shadow: 3px 4px 10px rgba(36, 29, 29, 0.719);
+}
+
+/*.card:hover .content{
+    transform: translateY(0);
+    opacity: 1;
+
+    /*transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}*/

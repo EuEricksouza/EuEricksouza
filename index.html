@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Portfólio</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <nav>
             <a class="logo" href="">Logo</a>
             <ul class="nav-list">
-                <a href="#pag-sobre">Sobre mim</a>
+                <li><a href="#pag-sobre">Sobre mim</a></li>
                 <li><a href="#pag-serv">Serviços</a></li>
                 <li><a href="#pag-skills">Skills</a></li>
                 <li><a href="#pag-contat">Contat</a></li>
@@ -32,17 +33,72 @@
     </article>
 
     <section id="pag-sobre" class="pagSobre">
+        <div class="image-sobre">
+            <img src="assets/undraw_certificate_re_yadi.svg" alt="">
+        </div>
+        <div class="circle"></div>
         <h1 class="nameSob">Sobre mim .</h1>
         <p>Meu nome é <label>Erick Souza</label>, sou desenvolvedor  de software<br> 
             com sólidas habilidades de desenvolver projetos e<br>
             com experiência comprovada adquirida<br> nas
-            formações acadêmicas em criação de
+            formações acadêmicas em criações de
             software.</p>
     </section>
 
     <section id="pag-serv">
+        <div class="card">
+            <div class="content">
+                <img src="assets/undraw_pair_programming_re_or4x.svg" alt="">
+                <h2>01</h2>
+                <h3>Criação de Sites</h3>
+                <p>Desenvolvimento de websites, portfólios e blogs com aspectos modernos.</p>
+            </div>
+        </div>
 
+        <div class="card">
+            <div class="content">
+                <img src="assets/undraw_designer_life_re_6ywf.svg" alt="">
+                <h2>02</h2>
+                <h3>Design</h3>
+                <p>Plantas de layouts adequado para o seu negócio profissional.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <img src="assets/undraw_security_on_re_e491.svg" alt="">
+                <h2>03</h2>
+                <h3>Profissionalismo</h3>
+                <p>O Profissionalismo acima de tudo e a responsabilidade acima de todos.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <img src="assets/undraw_personal_information_re_vw8a.svg" alt="">
+                <h2>04</h2>
+                <h3>Animações</h3>
+                <p>Crio animações modernas que trasmite a atenção do usuário.</p>
+            </div>
+        </div>
+
+        <div class="circle"></div>
     </section>
 
+    <section id="pag-skills">
+        <div class="skills">
+            <div class="content-skills">
+                <h1>Skills.</h1>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+        });
+    </script>
 </body>
 </html>
