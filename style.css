@@ -49,7 +49,7 @@ a{
     margin-left: 35px;
 }
 
-article{
+.home{
     padding-right: 18rem!important;
     padding-left: 18rem!important;
     background-color: #212529;
@@ -208,7 +208,68 @@ article{
     z-index: 1;
 }
 
+#pag-skills{
+    width: 100%;
+    height: 600px;
+    background-color: #100f16;
+    border: solid 1px #212529;
+}
 
+#pag-skills .box-skills{
+    padding: 50px 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills h1{
+    font-family: 'Gruppo', cursive;
+    font-size: 50px;
+    cursor: default;
+    color: #ffffff;
+}
+
+.skills p{
+    font-family: 'Poppins';
+    font-size: 15px;
+    text-shadow: 3px 4px 10px rgba(189, 181, 181, 0.26);
+    cursor: default;
+    color: #BEBEBE;
+    margin-top: 8px;
+}
+
+.html-card{
+    background-color: #100f16;
+    border-radius: 2px;
+    height: 140px;
+    width: 160px;
+    margin: 0;
+    padding: 0;
+}
+
+.html-card img{
+    width: 110px;
+    margin-left: 1.5rem;
+    margin-top: 8px;
+}
+
+.css-card{
+    background-color: #100f16;
+    margin: 0;
+    padding: 0;
+}
+
+.css-card img{
+    width: 150px;
+}
+
+.js-card{
+    background-color: #100f16;
+}
+
+.sass-card{
+    background-color: #100f16;
+}
 
 
 
